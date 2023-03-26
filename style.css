@@ -1,10 +1,29 @@
 *{
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: "Be Vietnam Pro", sans-serif;
     scroll-behavior: smooth;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
 }
+
+:root{
+  --bg-color: #1f242d ;
+  --second-bg-color: #323946 ;
+  --text-color: #fff;
+  --main-color: #0ef ; 
+}
+
+html{
+  overflow-x: hidden;
+
+}
+
+
+
 
 #wrapper{
 
@@ -12,55 +31,45 @@
     overflow-x: hidden;
 }
 
-.container{
-    margin: 0 auto;
-    width: 1200px;
-}
-
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1rem;
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
 }
 
 .logo{
-    height: 80px ;
-    width: 80px;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  font-weight: 600;
+  cursor: default;
 }
 
-.logo-text{
-    margin-left: -1.2rem;
-    font-size: 40px;
+.navbar a{
+  font-size: 1.7rem;
+  color: var(--text-color);
+  margin-left: 1rem;
 }
 
-.logo-container{
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
+.navbar a:hover,
+.navbar a.active {
+  color: var(--main-color);
 }
 
-.nav-items{
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-items div{
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.nav-items div a{
-    color: black;
-}
-
-.nav-items div a:hover{
-    font-weight: bold;
-    transition: 0.8s;
+#menu-icon{
+  font-size: 3.6rem;
+  color: var(--text-color);
+  display: none;
 }
 
 .hero-section{
+  min-height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -68,7 +77,7 @@
 
     gap: 5rem ;
     margin: 4rem auto;
-    padding: 0 1rem;
+    padding: 10rem 9% 2rem;
     padding-bottom: 8rem;
 }
 
@@ -78,11 +87,13 @@
     font-size: 7em ;
     color: rgb(122, 120, 120);
 
-    bottom: -16%; ;
+    bottom: -10%; ;
     left: 5%;
     font-weight: bold;
     transition: all 3s;
 }
+
+
 
 .hero-section-left{
     display: flex;
@@ -454,11 +465,112 @@
     background-image: url(./images/projects/Project4.png);
   }
 
+  
+@media(max-width: 1200px)
+{
+    html{
+      font-size: 55%;
+    }
+
+    .faded-text{
+      bottom: -5%;
+      left: 2%;
+      font-size: 4em;
+    }
+    .hero-section-description{
+      font-size: 1.6rem;
+    }
+
+    .skill-subHeading p{
+      font-size: 1.6rem;
+    }
+
+    .hero-section-right{
+      margin-right: 35px;
+    }
+}
+
+@media(max-width: 991px){
+  .header{
+    padding: 2rem 3%; 
+  }
+  .skill-fade-text{
+    display: none;
+  }
+  footer{
+    padding: 2rem 3%;
+  }
+
+}
+
+@media(max-width: 768px){
+
+  #menu-icon{
+    display: block;
+  }
+
+  .navbar{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: var(--bg-color);
+    border-top: .1rem solid rgba(0,0,0,.2);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+    display: none;
+  }
+
+  .navbar.active{
+    display: block;
+  }
+
+  .navbar a {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 0;
+  }
+  
+
+  .hero-section{
+    flex-direction: column;
+  }
+
+  .hero-section-right{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-section-description{
+    font-size: 2.6rem;
+    width: auto;
+  }
+
+  .skills-container{
+    flex-direction: column;
+  }
+
+  #skill-container-left{
+    
+    width: 100%;
+  }
+
+  #skill-container-right{
+    width: 100%;
+  }
+
+  .role{
+    font-size: 3.7rem;
+  }
+
+  .hero-section-sub-heading{
+    font-size: 40px;
+  }
+
+}
+
   @media (max-width:1300px) {
     .page-header {
-      padding-top: 30px;
-      color: #e84949;
-      text-align: center;
       font-size: 40px;
     }
     .project-container {
@@ -509,6 +621,7 @@
     .project-card:hover .project-content {
       scale: 0.55;
     }
+
   }  
 
 
@@ -540,8 +653,8 @@
   font-size:15em;
   font-style:bold;
   color:rgb(231,231,231);
-  bottom:-34.5%;
-  right:-25%;
+  bottom: -42.5%;
+  right: 0%;
   user-select:none;
   overflow-y:hidden;
 }
@@ -645,6 +758,7 @@
 .formfield-textarea{
   height:auto;
   padding-top:1rem;
+  resize: none;
 }
 
 #submit-btn{
