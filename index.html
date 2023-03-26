@@ -6,28 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
 </head>
 <body>
     <div id="wrapper">
-        <div class="container">
-
-
-            <div class="navbar">
-
-
-                <div class="logo-container">
-
-                    <img src="letter-p-logo-power_42564-11.avif" alt="P logo" class="logo">
-                    <div class="logo-text">aras Kumar</div>
-                </div>
-
-                <div class="nav-items">
-                    <div><a href="#projects">Projects</a></div>
-                    <div><a href="#skills">Skills</a></div>
-                    <div><a href="#Contact">Contacts</a></div>
-                </div>
-
-            </div>
+             
+        <div class="header">
+          <a href="#" class="logo">Paras Kumar</a>
+          
+          <i class='bx bx-menu' id="menu-icon"></i>
+          
+          <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </nav>
         </div>
 
         <div class="hero-section">
@@ -40,11 +36,11 @@
                 <div class="hero-section-heading hero-section-sub-heading">
                     I am a <span class="role"></span>
                 </div>
-                <div class="hero-section-description">
+                <p class="hero-section-description">
 
                     I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software 
                     developer.
-                </div>
+                </p>
                 <div class="btn-pink" id="btn">Hire Me</div>
             </div>
             
@@ -202,12 +198,11 @@
 
         <div id="skills" class="container skills-container">
             <div class="skill-fade-text">Skills</div>
-            <div  class="skill-container-left">
-                <h2 class="skill-heading">
-                    <span class="caps">M</span>e and
-                    <br />
-                    MyTech Stack
-                </h2>
+            <div id="skill-container-left"  class="skill-container-left">
+                <div class="skill-heading">
+                    Me and My Tech Stack   
+                </div>
+                
 
                 <div class="skill-subHeading">
                     <p>
@@ -229,7 +224,7 @@
                 </div>
             </div>
 
-            <div class="skill-container-right">
+            <div id="skill-container-right" class="skill-container-right">
                 <img src="./images/userAsset/blob vector.png" class="blob-style" alt="" />
 
                 <img src="./images/stack/HTML.png" alt="" class="skills-logo" />
@@ -355,6 +350,6 @@
       backDelay: 1000,
     });
   </script>
-    
+  <script src="script.js"></script>
 </body>
 </html>
