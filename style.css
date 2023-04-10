@@ -301,12 +301,14 @@ html{
   }
 
 .project-section{
-    background-color: rgb(231, 231 , 231);
+    /* background-color: rgb(231, 231 , 231); */
+    border:white;
+    background-color: #2f2f2f ; 
     margin-top: 4rem;
 }  
 
 .page-header{
-    color: #e84949;
+    color: #9c68ac;
     font-size: 90px;
     text-align: center;
     padding-top: 30px;
@@ -742,6 +744,7 @@ html{
   display:flex;
   align-items: center;
   justify-content: center;
+  background-color: #1e1a1a;
 }
 
 .form{
@@ -792,7 +795,7 @@ html{
 footer{
   position:relative;
   margin-top:-1px;
-  background-color: #343d68;
+  background-color: #2f2f2f;
   padding:5rem;
 }
 
