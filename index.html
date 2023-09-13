@@ -22,14 +22,13 @@
           
           <nav class="navbar">
             <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="#skills">Skill</a>
+            <a href="#project">Project</a>
+            <a href="#contactme">Contact</a>
           </nav>
         </div>
 
-        <div class="hero-section">
+        <div class="hero-section" id="home">
             
             <div class="faded-text">Paras Kumar</div>
 
@@ -73,7 +72,7 @@
 
         </div>
 
-        <div class="project-section">
+        <div class="project-section" id="project">
             <h2 class="page-header">Projects</h2>
 
             <div class="project-container">
@@ -209,20 +208,19 @@
 
                 <div class="skill-subHeading">
                     <p>
-                    Hi Everyone My name is John Doe I am a Full Stack Web Developer I
-                    have been working for last 3 Years and Currently I am working with a
-                    Budding Startup in USA and a full Time Freelancer. Currently I am
-                    working on NextJs and Making Beautiful UI-UX are my fey features
+                      Hi Everyone My name is Paras Kumar I am a Full Stack Web Developer I have been actively working in 
+                      the web development field for the past 3 years, gaining expertise in coding languages like C++, C, 
+                      and object-oriented programming Currently, I am exploring the intricacies of MERN stack development 
+                      to build dynamic and interactive web applications.
                     </p>
                     <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
-                    doloremque aspernatur, maiores voluptatum minus laudantium?
-                    Perspiciatis accusamus minima porro dolores necessitatibus, magni
-                    dolorem et qui veniam nulla sequi molestiae maxime.
+                      In addition to my expertise in web development, I possess hands-on experience working with both 
+                      Windows and Linux operating systems, making me versatile and adaptable in diverse technological environments
                     </p>
                     <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quidem
-                    quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?
+                      Apart from this, I have a keen interest in exploring the world of Android customization through custom ROMs. 
+                      This hobby allows me to delve into the depths of mobile technology and stay updated with the latest trends in 
+                      the Android ecosystem.
                     </p>
                 </div>
             </div>
@@ -253,7 +251,7 @@
             </div>
         </div>
 
-        <div class="contactus-form-container">
+        <div class="contactus-form-container" id="contactme">
           <div class="container">
             <h1 class="contactus-heading">Contact me</h1>
             <h3 class="contactus-sub-heading">
@@ -261,30 +259,35 @@
             </h3>
 
             <div class="contactus-form-container">
-              <form class="form" action="">
+              <form class="form" action="https://formspree.io/f/mrgwbrlk">
                 <div class="formfield-container">
                   <input class="formfield" 
                   type="text" 
                   name="name" 
                   id="" 
-                  placeholder="Enter your name" />
+                  placeholder="Enter your name" 
+                  required />
 
                   <input class="formfield" 
                   type="email" 
                   name="email" 
                   id="" 
-                  placeholder="Enter your email address" />
+                  placeholder="Enter your email address" 
+                  required />
 
                   <input class="formfield" 
                   type="text" 
                   name="subject" 
                   id="" 
-                  placeholder="Enter your subject" />
+                  placeholder="Enter your subject" 
+                  required />
 
                   <textarea name="message" 
                   id="" cols="30" rows="10" 
                   class="formfield formfield-textarea"
-                  placeholder="Enter your message"></textarea>
+                  placeholder="Enter your message"
+                  required   
+                  ></textarea>
 
                 </div>
 
@@ -355,6 +358,8 @@
       backDelay: 1000,
     });
   </script>
+
+  
   <script src="script.js"></script>
 </body>
 </html>
